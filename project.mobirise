@@ -1,0 +1,150 @@
+{
+  "settings": {
+    "name": "Site 2023-12-12 15:15",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2.5,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.2,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.0",
+    "siteFonts": [
+      {
+        "css": "'Inter Tight', sans-serif",
+        "name": "Inter Tight",
+        "url": "https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i"
+      }
+    ],
+    "favicon": "@PROJECT_PATH@/assets/images/debank_1.png",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://debank-debanj.github.io/sitemap.xml\n\n\n",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://debank-debanj.github.io",
+    "sitemapSwitcherAuto": "on",
+    "mbrsiteDomain": "6smwctdi6d",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.0"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Debank™ | Home Official Site",
+        "meta_descr": "Debank allows users to track their DeFi portfolio across multiple protocols and platforms. Users can view their asset balances, transaction history, and overall portfolio performance in real-time.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image4\" group=\"Images & Videos\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://debank.com/\"><img src=\"@PROJECT_PATH@/assets/images/debank.png\" alt=\"Debank\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_cid": "tYdvneQJIW",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image04-0"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "1.5rem"
+              },
+              "@media (min-width: 768px)": {
+                "padding": "2.25rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#000000",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#edefeb\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>Debank™ | Home Official Site</b></h3>\n          <div class=\"row card-box align-left\">\n            \n            \n            \n            <div class=\"item features-without-image col-12 active\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Shipment tracking</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><a href=\"https://debank-debanj.github.io/\" class=\"text-primary\">Debank</a> is a comprehensive decentralized finance (DeFi) dashboard that provides users with a holistic view of their DeFi portfolio and activities. It serves as a one-stop platform for tracking and managing various DeFi protocols, including lending platforms, decentralized exchanges (DEXs), yield farming projects, and more. In this guide, we will explore what Debank is, its key features, and how it benefits users in navigating the DeFi ecosystem.\n<br>\n<br>1. Introduction to Debank:\n<br>\n<br>Debank is a popular DeFi analytics and portfolio management platform that aims to simplify and streamline the DeFi user experience. It was created to address the challenges faced by users in monitoring and managing their DeFi investments across multiple protocols and platforms. By aggregating data from various sources, Debank offers users a comprehensive overview of their DeFi portfolio, enabling them to make informed decisions and optimize their strategies.\n<br>\n<br>2. Key Features of Debank:\n<br>Debank offers a range of features that enhance the DeFi user experience:\n<br>\n<br>a. Portfolio Tracking: <a href=\"https://debank.com/\" class=\"text-primary\">Debank</a> allows users to track their DeFi portfolio across multiple protocols and platforms. Users can view their asset balances, transaction history, and overall portfolio performance in real-time. This feature provides users with a consolidated view of their DeFi investments, facilitating better portfolio management and decision-making.\n<br>\n<br>b. Wallet Integration: Debank supports integration with popular cryptocurrency wallets, enabling users to connect their wallets and access their DeFi assets seamlessly. This eliminates the need for manual data entry and ensures that users have up-to-date and accurate information about their holdings.\n<br>\n<br>c. Protocol Monitoring: Debank provides users with detailed information about various DeFi protocols, including lending platforms, DEXs, yield farming projects, and more. Users can monitor key metrics such as total value locked (TVL), trading volumes, interest rates, and token prices. This helps users stay informed about the performance and trends within the DeFi ecosystem.\n<br>\n<br>d. Transaction History: Debank maintains a comprehensive transaction history for users, allowing them to review and analyze their past activities. Users can track their deposits, withdrawals, trades, and other transactions across different protocols. This feature provides transparency and helps users maintain accurate records for tax purposes or auditing.\n<br>\n<br>e. Analytics and Insights: Debank offers various analytical tools and insights to help users understand their portfolio performance and make data-driven decisions. Users can analyze their asset allocation, historical returns, and yield farming strategies. Additionally, Debank provides charts and graphs to visualize data and trends, making it easier for users to interpret and act on the information.\n<br>\n<br>f. Notifications and Alerts: Debank provides users with customizable notifications and alerts to stay updated on important events and market movements. Users can set alerts for price changes, liquidation risks, or specific conditions within their portfolio. This feature helps users proactively manage their investments and respond to market opportunities or risks.\n<br>\n<br>g. Yield Farming Analytics: Debank offers specific features for yield farmers, including tracking of farming positions, historical yields, and performance of various yield farming strategies. Users can compare different farming opportunities, estimate potential returns, and optimize their farming strategies based on current market conditions.\n<br>\n<br>h. Security and Privacy: Debank prioritizes user security and privacy. It does not store or have access to users' wallet private keys, ensuring that users retain full control over their funds. Debank also employs encryption and other security measures to protect user data and interactions on the platform.\n<br>\n<br>3. Benefits of Using Debank:\n<br>Using Debank provides several benefits to DeFi users:\n<br>\n<br>a. Portfolio Management: Debank simplifies the management of DeFi portfolios by aggregating data from multiple protocols and platforms. Users can monitor their assets, track performance, and analyze strategies in one centralized dashboard. This saves time and effort, enabling users to make informed decisions efficiently.\n<br>\n<br>b. Data Transparency: Debank provides users with transparent and real-time data on DeFi protocols, including TVL, trading volumes, and interest rates. This helps users stay updated on market trends and make informed investment decisions based on accurate information.\n<br>\n<br>c. Risk Management: Debank's analytics and monitoring features enable users to assess and manage risks effectively. Users can track their exposure to different protocols, monitor liquidation risks, and set alerts for potential issues. This helps users mitigate risks and protect their investments.\n<br>\n<br>d. Optimization of Yield Farming: For yield farmers, Debank offers valuable tools to track farming positions, estimate yields, and compare different strategies. This helps users optimize their farming activities, maximize returns, and navigate the dynamic landscape of yield farming.\n<br>\n<br>e. Enhanced User Experience: Debank's user-friendly interface and intuitive design contribute to an enhanced user experience. The platform is accessible to both experienced DeFi users and newcomers, providing a smooth and engaging interface for managing DeFi portfolios.\n<br>\n<br>f. Community and Insights: Debank fosters a vibrant community of DeFi enthusiasts by providing a platform for users to share insights, strategies, and discussions. Users can learn from each other, discover new opportunities, and stay connected withthe latest trends and developments in the DeFi space.\n<br>\n<br>4. Conclusion:\n<br>Debank is a powerful tool that empowers users in navigating the decentralized finance landscape. By offering portfolio tracking, protocol monitoring, analytics, and other features, Debank simplifies the management of DeFi investments and provides users with valuable insights. With its focus on security, privacy, and user experience, Debank contributes to the growth and adoption of decentralized finance by making it more accessible and user-friendly. Whether you are an experienced DeFi user or just starting your journey in the world of decentralized finance, Debank can be a valuable companion in managing and optimizing your DeFi portfolio.</p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "tYdvo8JjPK",
+          "_anchor": "article07-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
